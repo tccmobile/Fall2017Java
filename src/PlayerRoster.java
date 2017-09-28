@@ -18,10 +18,7 @@ public class PlayerRoster {
             System.out.println();
         }
 
-        System.out.println("ROSTER");
-        for (int i = 0; i < NUM_PLAYERS; i++) {
-            System.out.println("Player " +(i+1)+" -- Jersey number: "+jerseyNumbers[i]+", Rating: "+playerRatings[i]);
-        }
+
 
         char userChoice= '?';
 
@@ -35,6 +32,13 @@ public class PlayerRoster {
             System.out.println();
             System.out.print("Choose an option:");
             userChoice = scanner.next().charAt(0);
+
+            if (userChoice=='o'){
+                System.out.println("ROSTER");
+                for (int i = 0; i < NUM_PLAYERS; i++) {
+                    System.out.println("Player " +(i+1)+" -- Jersey number: "+jerseyNumbers[i]+", Rating: "+playerRatings[i]);
+                }
+            }
 
         } while (userChoice!='q');
     }
