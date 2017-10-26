@@ -22,6 +22,8 @@ public class ShoppingCartPrinter {
 
         scanner.nextLine();
 
+        System.out.println();
+
         System.out.println("Item 2");
         System.out.println("Enter the item name:");
         name = scanner.nextLine();
@@ -34,6 +36,7 @@ public class ShoppingCartPrinter {
         itemTwo.setName(name);
         itemTwo.setPrice(price2);
         itemTwo.setQuantity(quantity2);
+        System.out.println();
 
         System.out.println("TOTAL COST");
 
