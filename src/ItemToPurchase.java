@@ -12,7 +12,7 @@ public class ItemToPurchase {
         itemDescription = "none";
     }
 
-    public ItemToPurchase(String itemName, int itemPrice, int itemQuantity, String itemDescription) {
+    public ItemToPurchase(String itemName, String itemDescription, int itemPrice, int itemQuantity) {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemQuantity = itemQuantity;
@@ -52,10 +52,12 @@ public class ItemToPurchase {
     }
 
     public void printItemCost(){
+        System.out.println(itemName+" "+itemQuantity+" @ $"+itemPrice+" = $"+(itemQuantity*itemPrice));
 
     }
 
     public void printItemDescription(){
+        System.out.println(itemName+": "+itemDescription);
 
     }
 }

@@ -27,10 +27,13 @@ public class ShoppingCart {
     }
 
     public void addItem(ItemToPurchase item){
+        cartItems.add(item);
 
     }
 
     public void removeItem(String itemName){
+
+        cartItems.get(i).getName() == itemName
 
 
     }
@@ -40,6 +43,9 @@ public class ShoppingCart {
     }
 
     public int getNumItemsInCart(){
+        int total;
+
+          total+=cartItems.get(i).getQuantity()
 
         return 0;
     }
